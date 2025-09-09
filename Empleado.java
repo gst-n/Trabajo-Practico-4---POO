@@ -4,6 +4,8 @@
  */
 package trabajo.practico.pkg4;
 
+import java.util.Objects;
+
 /**
  *
  * @author gast-n
@@ -25,6 +27,7 @@ public class Empleado {
     }
     
     public Empleado(String nombre, String puesto){
+        this.id = hashCode();
         this.nombre = nombre;
         this.puesto = puesto;
         this.salario = 140000.0;
@@ -72,6 +75,30 @@ public class Empleado {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 79 * hash + Objects.hashCode(this.nombre);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Empleado other = (Empleado) obj;
+        return true;
+    }
+    
+    
     
     
 }

@@ -17,11 +17,11 @@ public class TrabajoPractico4 {
         // 1. Implementar la clase Empleado aplicando todos los puntos anteriores
         
         //implementando el primero constructor con todos los atributos
-        Empleado empl1 = new Empleado(1, "Mark", "Capitan", 14656.4);
+        Empleado empl1 = new Empleado(109, "Mark", "Capitan", 14656.4);
         Empleado empl2 = new Empleado("Alfredo", "Piloto de helicoptero");
         //Segundo constructor con dos atributos
         Empleado empl3 = new Empleado("Irving", "Sereno");
-        Empleado empl4 = new Empleado(4, "Clementina", "Cientifica", 900000000000.2);
+        Empleado empl4 = new Empleado(4, "Clementina", "Cientifica", 9000000.2);
         
         //incrementamos el salario con argumento de porcentaje double
         empl1.actualizarSalario(14.5);
